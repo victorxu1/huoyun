@@ -182,9 +182,9 @@ public function alipay(){
         $out_trade_no = date('YmdHis', time()).rand(1000,9999);
         $aop = new \AopClient;
         $aop->gatewayUrl = "https://openapi.alipay.com/gateway.do";
-        $aop->appId = "2019022263300312";
-        $aop->rsaPrivateKey = "MIIEowIBAAKCAQEA1zI3S1le7BWvPj2LGqGcweO/fJIgwgWDpPOHnvEzpGGToDDn7V6H/Tn4gFTJO5ZutcrgpWjhowPsBPIdKq3ne74Eg3iENyRMgEU3N++fCPAgincy3a/Ic4PRJWrYXdvAWiTPf/sESCuwPy5uKsuvjtFcRkHRHrvx3B9dOS1Yz2E0V8gsFJV6f7+hH25GigzktBZDQnQQKUyoE7LKkvJ2dVgOPgKux/TSoBwtG0S44k5B7yCUYNC5QfNoBYwXIM3ApCj/h12AjZoCV3bYykTJ1i5LT6AFAagtrrWtaZzJoSpleqkdMYGecXXTzlpy0fTp7oBFzylvFXCNAvVxBuVV0QIDAQABAoIBAHC0qCkagZB8OvAKI5SrGAKkWWHQ1r9HTA9UTK99/GIXiM3ZT18Op4KEnhX4UfyXaRxlSQrYx3QtVauxcn0r35T7jDmfIQAQTtDPb4AoS87OlPxwOX/J1N5LJ3rFXtSphzCvHs4UlcWGvCQbGS/oxeWy2PUi+3dxT9bNxnFvwpe5hqTwcmUfrwKUph7QOkvgE9yJ1bA5BC7wHDAzkw7jZ3GNj5pEd+dXoocQkT+ThKNDk3axUpYuu1BpFt95nTGpjPAyR+XjFrRbsLZCAeiWeXUNHYslKHG7v/W4tot3Y8lpVoACfmMAHiX34YtSudwhDMSGLlz4N4szsQDPCkbPyBECgYEA/fizUPucicKL/QSohZWHIY2klUywz3Kop761LDDD9F5c21eG5+QNA6LF9G58Y3m0mb0GOVzUDsnv0Lu+KpKhCPM3FZEPhFo6P0Fo/jDea2KZZIGzArWAxsIjOEAQ9MiH8IPRMmgcXmuBXsd/XdAX5tjY2C/6mdWpZJ3lph+Vg8MCgYEA2Oo7IxLe9FyiOmESehICjqONcBH+peDxL8tmqt2GM2l+KJvt7tapth5HkiTiy1GvxeSPaX0Kd7Lm7SyfrWdPqa+yovzBlcHPet/5zf186F/m+84dT+6f+dAEPXZLAlYLrgZ/n1O2zlATXj1y5SnCNwrkWzDt8Q7jBUb1orRICtsCgYEAvGMPeCG7gwBZYKxk6Pn6i6wKimihuq99ZTh0ITxnDkw0qsspGbey46CJIAAYqp0rluJ8zG4MKpAmIHoy3Fd5ti7bDFdW4EEhdaxqWisbwSIZUFFY3MiPpl95So9TRI+/LmxI8BAEAxHRm+F1m7vxDt6JMwub4yJ3DViGcYx6FosCgYAFIi36G4U5RUP1m7yDNQ/obkh3oYVkSZmLpwWr/4ggiVuZ/G66G0xy6e6Jr+PKKgm95jXaqkHoKUy7yjWRNgO1oVnZ759pOuf9IXXZASnGmhZuWSdqb9xLXjfreHQ3/u9R1AeLLsEByvVaYpvofn+BK/nRiqvm65JF2rMPgbK+xwKBgEFhhF3adiMVmbeRvFGKS6iknwJhkYzIn9A0AIvX3fem2pHztc8Dr2faAgMRk+v4TU4QketeYTBt3EZQ1SLUa92CN/ImWtQnaTHcDZl8t6JyBl09a/4qeqG+IqZ3s0h+Z0YcwNuSny2KVHaMIHcBGQQ9z1cNA8p1eUHHIUlpsn5q";
-        $aop->alipayrsaPublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAizASEyssfgTk5St0ZqcuFG3p3cyKobbQl/BTVzGYV9jcLv1JVEla6El3Ps+K3Yym2hJVPKThuEOhuFbWpQGIZmrDHRukxAq9h5ikRVCyl4L9CGm7g8VIMY5EBN45jvz3+PwBn08NNzSSwaw+DmdWRZ3h2uTXblbfhvgr8IaFdPP1I+CKyVrldrq1MBv4mORMguw1Y513oJT7eJlalXiDn1RkkWX0h4Y39rh/RqdMvC6JP0tFUR7Gl4Jl83jqIMT558PvOb0ehEVo4V51PE4QbFFFZYtBLoHmUToDwEjTKwQW5DHly4ZEodPu/tzAWl8pQQCRCVtANwRcogQlEdgrqwIDAQAB";
+        $aop->appId = "2019022000000000";
+        $aop->rsaPrivateKey = "PRIVATEKEY";
+        $aop->alipayrsaPublicKey = "PUBLICKKEY";
         $aop->format   = "json";
         $aop->charset  = "UTF-8";
         $aop->signType = "RSA2";
